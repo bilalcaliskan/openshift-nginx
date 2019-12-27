@@ -13,5 +13,4 @@ ADD nginx.conf /etc/nginx/
 RUN touch /run/nginx.pid \
     && chgrp -R 0 /run/nginx.pid /var/cache/nginx /var/lib/nginx /var/tmp/nginx \
     && chmod -R g+rwx /run/nginx.pid /var/cache/nginx /var/lib/nginx /var/tmp/nginx
-ADD test.txt /usr/share/nginx/html/
 USER 1001
